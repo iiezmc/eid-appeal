@@ -1,0 +1,39 @@
+.search-zone.eid{
+    /*background-color: #D9EDF7;*/
+    background-color: #428bca;
+}
+.search-zone label {
+    color: #fff;
+}
+.search-form.eid {margin: 0 10px;}
+.home-search-input-box {width: 100%;}
+.home-search-input {width: 628px;}
+.eid-alink-image {margin-right: 5px;}
+.eid-btn-group .eid-btn{margin-bottom: 5px;}
+.navbar-default.eid {
+    /*color: #fff;*/
+    background-color: #428bca;
+    /*border-color: #428bca;*/
+}
+.navbar-default.eid .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default.eid .navbar-nav>li.active>a {
+    color: #777;
+    /*font-size: large;*/
+}
+.navbar-default.eid .navbar-nav>li>a:hover { color: #000; }
+.nav-title.eid { width: 90px;text-align: center;}
+/*.link-zone.eid { width: 300px; height: 150px;}*/
+.link-zone.eid>input{
+    width: 380px; height: 190px; text-align: center; vertical-align: middle;
+    color: #fff;
+    font-size: 30px;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.link-zone.eid>.link1{background: url(../image/btn1-background.png);}
+.link-zone.eid>.link2{background: url(../image/btn2-background.png);}
+.link-zone.eid>.link3{background: url(../image/btn3-background.png);}
+.link-zone.eid>.link4{background: url(../image/btn4-background.png);}
+.row.eid{margin-bottom: 15px;}
