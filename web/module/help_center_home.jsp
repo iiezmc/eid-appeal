@@ -37,7 +37,7 @@
             <div id="navbar" class="navbar navbar-default eid">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="module/help_center_home.jsp" class="nav-title eid">首&nbsp;&nbsp;页</a></li>
-                    <li><a href="module/help_center_question.jsp" class="nav-title eid">常见问题</a></li>
+                    <!--<li><a href="module/help_center_question.jsp" class="nav-title eid">常见问题</a></li>-->
                     <li><a href="module/help_center_contact.jsp" class="nav-title eid">联系客服</a></li>
                 </ul>
             </div>
@@ -47,39 +47,117 @@
         <!-- main body -->
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1" >
-<!--                    <div class="row eid"> 
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link1" value="账号申述"/> </div>
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link2" value="申述进度查询"/> </div>
+
+                <!-- left body-->
+                <div class="left-container col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">申诉服务</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="eid-btn-group">
+                                <div class="eid-btn">                                
+                                    <a href="#" class="btn">
+                                        <span class="glyphicon glyphicon-star eid-alink-image"></span>账号申诉
+                                    </a>
+                                </div> 
+                                <div class="eid-btn">                                
+                                    <a href="#" class="btn">
+                                        <span class="glyphicon glyphicon-star eid-alink-image"></span>申述进度查询
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
-                    <div class="row eid"> 
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link3" value="BUTTON"/> </div>
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link4" value="BUTTON"/> </div>
-                    </div>-->
-                    <div class="row eid"> 
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link1" value="找回密码/更换手机"/> </div>
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link2" value="申述进度查询"/> </div>
+
+                    <!-- normal questions -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">常见问题分类</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <a class="btn btn-info btn-block" onclick="show_ques('register')">注册问题</a>
+                            </ul>
+                            <ul class="list-group">
+                                <a class="btn btn-info btn-block" onclick="show_ques('appeal')">申述问题</a>
+                            </ul>
+                            <ul class="list-group">
+                                <a class="btn btn-info btn-block" onclick="show_ques('login')">登录问题</a>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="row eid"> 
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link3" value="照片不通过"/> </div>
-                        <div class="col-md-6 link-zone eid"> <input type="button" class="btn link4" value="身份被盗用"/> </div>
-                    </div>
+                    <!-- /normal questions -->
                 </div>
-            </div> <!-- /.row-fluid -->
-            
-        </div>
+                <!-- /left body-->
 
-        
-        
 
+
+
+
+
+
+                <!-- right body-->
+                <div class="right-container col-md-9 page-body">
+                    <!-- register question -->
+                    <div id="panel-register" class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                注册问题
+                            </h4>
+                        </div>
+                        <div class="panel-collapse" >
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="javascript:void(0);">如何修改密码?</a></li>
+                                    <li><a href="javascript:void(0);">认证时提示证件号码已被另一个账户用于认证是为什么?</a></li>
+                                    <li><a href="javascript:void(0);">我的身份证号已被别人认证了怎么办呢?</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /register question -->
+                    <!-- appeal question -->
+                    <div id="panel-appeal" class="panel panel-primary" hidden>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                申述问题
+                            </h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /appeal question -->
+                    <!-- login question -->
+                    <div id="panel-login" class="panel panel-default" hidden>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                登录问题
+                            </h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /login question -->
+                </div> <!-- /.right body -->
+                
+                
+            </div> <!-- /.row -->
+
+        </div> <!-- /.container -->
 
         <script src="plugin/jquery-1.10.2.min.js"></script>
         <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/help.center.js"></script>
         <script>
-            $(function() {
+                                    $(function() {
 
-            });
+                                    });
         </script>
     </body> 
 </html>
