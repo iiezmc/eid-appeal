@@ -57,12 +57,12 @@
                         <div class="panel-body">
                             <div class="eid-btn-group">
                                 <div class="eid-btn">                                
-                                    <a href="#" class="btn">
+                                    <a href="module/appeal_home.jsp" class="btn">
                                         <span class="glyphicon glyphicon-star eid-alink-image"></span>账号申诉
                                     </a>
                                 </div> 
                                 <div class="eid-btn">                                
-                                    <a href="#" class="btn">
+                                    <a href="module/appeal_check.jsp" class="btn">
                                         <span class="glyphicon glyphicon-star eid-alink-image"></span>申述进度查询
                                     </a>
                                 </div> 
@@ -132,7 +132,7 @@
                     </div>
                     <!-- /appeal question -->
                     <!-- login question -->
-                    <div id="panel-login" class="panel panel-default" hidden>
+                    <div id="panel-login" class="panel panel-primary" hidden>
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 登录问题
