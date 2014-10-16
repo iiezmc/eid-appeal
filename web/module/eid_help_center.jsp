@@ -16,6 +16,7 @@
     <head>
         <base href="<%=basePath%>">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home Page</title>
         <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/base.css">
         <style>
@@ -32,8 +33,6 @@
             .eid-alink-image {margin-right: 5px;}
             .eid-btn-group .eid-btn{margin-bottom: 5px;}
         </style>
-
-        <title>Home Page</title>
     </head>
     <body>
         <!-- header -->
@@ -56,7 +55,7 @@
                                 </button>
                                 <a class="navbar-brand" href="#">Project name</a>
                             </div>-->
-            <div id="navbar" class="navbar navbar-inverse ">
+            <div id="navbar" class="navbar navbar-default ">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -81,7 +80,7 @@
                                     </ul>-->
             </div><!--/.nav-collapse -->
 
-            <div  class="navbar panel panel-primary" style="min-height: 40px;">
+            <div  class="navbar panel" style="min-height: 40px;">
                 <ul class="nav nav-pills">
                     <li class=""><a href="#">Regular link</a></li>
                     <li class="active">
@@ -123,33 +122,33 @@
                         </div>
                         <div class="panel-body">
                             <div class="eid-btn-group">
-<!--                            <div class="media">
-                                <div class="pull-left" >
-                                    <img class="media-object" style="height: 20px; width: 100%; display: block;" data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=">
-                                </div>
-                                <div class="media-body"><a href="#">找回密码</a></div>
-                            </div>
+                                <!--                            <div class="media">
+                                                                <div class="pull-left" >
+                                                                    <img class="media-object" style="height: 20px; width: 100%; display: block;" data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=">
+                                                                </div>
+                                                                <div class="media-body"><a href="#">找回密码</a></div>
+                                                            </div>
+                                
+                                                            <button type="button" class="btn btn-block btn-default">
+                                                                <span class="glyphicon glyphicon-star"></span> Star
+                                                            </button>-->
 
-                            <button type="button" class="btn btn-block btn-default">
-                                <span class="glyphicon glyphicon-star"></span> Star
-                            </button>-->
-
-                            <div class="eid-btn">                                
-                                <a href="#" class="btn">
-                                    <span class="glyphicon glyphicon-star eid-alink-image"></span>常用服务
-                                </a>
-                            </div> 
-                            <div class="eid-btn">                                
-                                <a href="#" class="btn">
-                                    <span class="glyphicon glyphicon-star eid-alink-image"></span>找回密码
-                                </a>
-                            </div> 
+                                <div class="eid-btn">                                
+                                    <a href="#" class="btn">
+                                        <span class="glyphicon glyphicon-star eid-alink-image"></span>常用服务
+                                    </a>
+                                </div> 
+                                <div class="eid-btn">                                
+                                    <a href="#" class="btn">
+                                        <span class="glyphicon glyphicon-star eid-alink-image"></span>找回密码
+                                    </a>
+                                </div> 
                                 <div class="eid-btn">                                
                                     <a href="#" class="btn">
                                         <span class="glyphicon glyphicon-star eid-alink-image">
                                         </span>照片不通过
                                     </a>
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>
