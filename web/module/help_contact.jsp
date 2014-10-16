@@ -27,7 +27,8 @@
         <!-- header -->
         <header class="container">
             <div class="header">
-                <h3 class="text-muted">Project name <span>|</span> 帮助中心</h3>
+                <!--                <h3 class="text-muted">Project name <span>|</span> 帮助中心</h3>-->
+                <img src="images/logo.jpg"/>
             </div>
         </header>
         <!-- /header -->
@@ -36,9 +37,9 @@
         <div class="container">
             <div id="navbar" class="navbar navbar-default eid">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="module/help_center_home.jsp" class="nav-title eid">首&nbsp;&nbsp;页</a></li>
+                    <li class=""><a href="module/home.jsp" class="nav-title eid">首&nbsp;&nbsp;页</a></li>
                     <!--<li class=""><a href="module/help_center_question.jsp" class="nav-title eid">常见问题</a></li>-->
-                    <li class="active"><a href="module/help_center_contact.jsp" class="nav-title eid">联系客服</a></li>
+                    <li class="active"><a href="module/help_contact.jsp" class="nav-title eid">联系客服</a></li>
                 </ul>
             </div>
         </div> <!--</nav>-->
