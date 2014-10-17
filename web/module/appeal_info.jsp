@@ -34,7 +34,8 @@
         <!-- header -->
         <header class="container">
             <div class="header">
-                <h3 class="text-muted">Project name <span>|</span> 申述中心</h3>
+                <!--<h3 class="text-muted">Project name <span>|</span> 申述中心</h3>-->
+                <img src="images/logo.jpg"/>
             </div>
         </header>
         <!-- /header -->
@@ -43,9 +44,10 @@
         <div class="container">
             <div id="navbar" class="navbar navbar-default eid">
                 <ul class="nav navbar-nav">
+                    <li class=""><a href="module/home.jsp" class="nav-title eid">首&nbsp;&nbsp;页</a></li>
                     <li class="active"><a href="module/appeal_home.jsp" class="nav-title eid">账号申述</a></li>
                     <!--<li><a href="module/help_center_question.jsp" class="nav-title eid">常见问题</a></li>-->
-                    <li><a href="module/appeal_check.jsp" class="nav-title eid">申述进度查询</a></li>
+                    <li><a href="module/search_login.jsp" class="nav-title eid">申述查询</a></li>
                 </ul>
             </div>
         </div> <!--</nav>-->
@@ -62,7 +64,7 @@
                             <div class="body-north eid" >
                                 <img id="u9_img"  src="images/mailer.png">
                                 <div class="pull-right" style="padding-right: 80px;">
-                                    <h3>2~3个工作日  内申诉结果将发到您联系邮箱或手机</h3>
+                                    <h3>2~3个工作日内申诉结果将发到您联系邮箱</h3>
                                     <p>申诉成功后，原密码自动失效、您可以顺利地重新设置新密码。申诉期间帐号可以正常使用。</p>
                                 </div>
 

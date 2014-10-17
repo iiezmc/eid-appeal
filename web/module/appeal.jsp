@@ -30,7 +30,8 @@
         <!-- header -->
         <header class="container">
             <div class="header">
-                <h3 class="text-muted">Project name <span>|</span> 申述中心</h3>
+                <!--<h3 class="text-muted">Project name <span>|</span> 申述中心</h3>-->
+                <img src="images/logo.jpg"/>
             </div>
         </header>
         <!-- /header -->
@@ -39,9 +40,10 @@
         <div class="container">
             <div id="navbar" class="navbar navbar-default eid">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="module/appeal_home.jsp" class="nav-title eid">账号申述</a></li>
+                    <li class=""><a href="module/home.jsp" class="nav-title eid">首&nbsp;&nbsp;页</a></li>
+                    <li class="active"><a href="module/appeal.jsp" class="nav-title eid">账号申述</a></li>
                     <!--<li><a href="module/help_center_question.jsp" class="nav-title eid">常见问题</a></li>-->
-                    <li><a href="module/appeal_check.jsp" class="nav-title eid">申述进度查询</a></li>
+                    <li><a href="module/search_login.jsp" class="nav-title eid">申述查询</a></li>
                 </ul>
             </div>
         </div> <!--</nav>-->
@@ -58,7 +60,7 @@
                             <div class="body-north eid" >
                                 <img id="u9_img"  src="images/mailer.png">
                                 <div class="pull-right" style="padding-right: 80px;">
-                                    <h3>2~3个工作日  内申诉结果将发到您联系邮箱或手机</h3>
+                                    <h3>2~3个工作日内申诉结果将发到您联系邮箱</h3>
                                     <p>申诉成功后，原密码自动失效、您可以顺利地重新设置新密码。申诉期间帐号可以正常使用。</p>
                                 </div>
 
@@ -95,9 +97,8 @@
                                             <div class="col-sm-9">
                                                 <select id="inputType" class="form-control">
                                                     <option selected="" value=""> </option>
-                                                    <option value="help_center">帮助中心</option>
                                                     <option value="passwd">密码找回</option>
-                                                    <option value="phone">手机重置</option>
+                                                    <option value="s">身份被盗用</option>
                                                     <option value="photo">照片不通过</option>
                                                 </select>
                                             </div>
@@ -114,17 +115,17 @@
                                             <div>
                                                 <div class="col-sm-9">
                                                     <input type="email" class="form-control col-sm-4" id="inputEmail" placeholder="输入邮箱"> 
-                                                    <label class="label-default">请留下联系邮箱，我们会将回复以邮件的方式发送到您的联系邮箱。</label>
+                                                    <label class="label label-default">请留下联系邮箱，我们会将回复以邮件的方式发送到您的联系邮箱。</label>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+<!--                                        <div class="form-group">
                                             <label for="inputPhone" class="col-sm-2 control-label">手机号码：</label>
                                             <div class="col-sm-9">
                                                 <input type="email" class="form-control col-sm-4" id="inputPhone" placeholder="选填"> 
                                             </div>
-                                        </div>
+                                        </div>-->
 
                                         <div class="form-group">
                                             <label for="inputVerify" class="col-sm-2 control-label">验证码：</label>
