@@ -17,7 +17,7 @@
 .navbar-default.eid .navbar-nav>li>a:hover { color: #000; }
 .nav-title.eid { min-width: 90px;text-align: center;}
 .divider.eid {
-    border-bottom: 1px solid #eee;
-    margin: 10px 50px;
+    border-bottom: 2px solid #eee;
+    margin: 10px 0px;
 }
 .v-divider.eid {border-right: 1px solid #eee;}

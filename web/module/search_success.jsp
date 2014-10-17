@@ -1,9 +1,3 @@
-<%-- 
-    Document   : help_center_home
-    Created on : 2014-10-15, 16:33:39
-    Author     : XZXIONG
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
@@ -24,7 +18,7 @@
             .step-stat.eid {width:440px; margin: 0 auto; margin-bottom: 20px;}
             .step-stat.eid>img {width:100%;}
         </style>
-        <title>账号申述 - 申述中心</title>
+        <title>申述查询 - 申述成功</title>
     </head>
     <body>
         <!-- header -->
