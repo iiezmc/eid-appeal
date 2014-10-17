@@ -24,7 +24,7 @@
             .step-stat.eid {width:440px; margin: 0 auto; margin-bottom: 20px;}
             .step-stat.eid>img {width:100%;}
         </style>
-        <title>账号申述 - 申述中心</title>
+        <title>账号申述 - 个人资料</title>
     </head>
     <body>
         <!-- header -->
@@ -95,11 +95,9 @@
                                         <div class="form-group">
                                             <label for="inputType" class="col-sm-2 control-label">申述类型：</label>
                                             <div class="col-sm-9">
-                                                <select id="inputType" class="form-control">
-                                                    <option selected="" value=""> </option>
-                                                    <option value="passwd">密码找回</option>
-                                                    <option value="s">身份被盗用</option>
-                                                    <option value="photo">照片不通过</option>
+                                                <input type="radio" name="type"   value="passwd" checked> 密码找回
+                                                <input type="radio" name="type"  value="s" > 身份被盗用
+                                                <input type="radio" name="type"  value="photo" > 照片不通过
                                                 </select>
                                             </div>
                                         </div>
@@ -160,7 +158,6 @@
         <script src="plugin/jquery-1.10.2.min.js"></script>
         <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/appeal.center.js"></script>
-        <script src="js/appeal.center.step01.js"></script>
         <script>
             $(function () {
 

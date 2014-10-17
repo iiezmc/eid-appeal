@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./css/help.center.css">
         <style>
         </style>
-        <title>常见问题 - 帮助中心</title>
+        <title>联系客服 - 帮助中心</title>
     </head>
     <body>
         <!-- header -->
