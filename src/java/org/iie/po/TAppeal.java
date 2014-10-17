@@ -1,5 +1,5 @@
 package org.iie.po;
-// Generated 2014-10-16 16:30:14 by Hibernate Tools 3.6.0
+// Generated 2014-10-17 15:48:45 by Hibernate Tools 3.6.0
 
 
 import java.util.Date;
@@ -10,7 +10,7 @@ import java.util.Date;
 public class TAppeal  implements java.io.Serializable {
 
 
-     private long appealId;
+     private Long appealId;
      private String appealNumber;
      private Byte appealKind;
      private String name;
@@ -22,7 +22,7 @@ public class TAppeal  implements java.io.Serializable {
      private byte[] handIdcard;
      private byte[] accountPhoto;
      private byte[] handAccount;
-     private String describe;
+     private String description;
      private Date requestTime;
      private Date modifyTime;
      private Byte status;
@@ -30,12 +30,7 @@ public class TAppeal  implements java.io.Serializable {
     public TAppeal() {
     }
 
-	
-    public TAppeal(long appealId) {
-        this.appealId = appealId;
-    }
-    public TAppeal(long appealId, String appealNumber, Byte appealKind, String name, String eid, String idcard, String telphone, String email, byte[] idcardPhoto, byte[] handIdcard, byte[] accountPhoto, byte[] handAccount, String describe, Date requestTime, Date modifyTime, Byte status) {
-       this.appealId = appealId;
+    public TAppeal(String appealNumber, Byte appealKind, String name, String eid, String idcard, String telphone, String email, byte[] idcardPhoto, byte[] handIdcard, byte[] accountPhoto, byte[] handAccount, String description,  Date requestTime, Date modifyTime, Byte status) {
        this.appealNumber = appealNumber;
        this.appealKind = appealKind;
        this.name = name;
@@ -47,17 +42,17 @@ public class TAppeal  implements java.io.Serializable {
        this.handIdcard = handIdcard;
        this.accountPhoto = accountPhoto;
        this.handAccount = handAccount;
-       this.describe = describe;
+       this.description = description;
        this.requestTime = requestTime;
        this.modifyTime = modifyTime;
        this.status = status;
     }
    
-    public long getAppealId() {
+    public Long getAppealId() {
         return this.appealId;
     }
     
-    public void setAppealId(long appealId) {
+    public void setAppealId(Long appealId) {
         this.appealId = appealId;
     }
     public String getAppealNumber() {
@@ -137,12 +132,12 @@ public class TAppeal  implements java.io.Serializable {
     public void setHandAccount(byte[] handAccount) {
         this.handAccount = handAccount;
     }
-    public String getDescribe() {
-        return this.describe;
+    public String getDescription() {
+        return this.description;
     }
     
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setDescription(String description) {
+        this.description = description;
     }
     public Date getRequestTime() {
         return this.requestTime;

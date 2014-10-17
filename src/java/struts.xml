@@ -11,4 +11,5 @@
     <include file="org/iie/strutsXml/struts_spread.xml"/>
     <include file="org/iie/strutsXml/struts_sort.xml"/>-->
     <include file="org/iie/strutsXml/struts_topic.xml"/>
+      <include file="org/iie/strutsXml/struts_upload.xml"/>
 </struts>

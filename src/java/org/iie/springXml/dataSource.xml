@@ -61,7 +61,7 @@
                     org.hibernate.dialect.OracleDialect
                 </prop>-->
                 <prop key="hibernate.show_sql">
-                    false
+                    true
                 </prop>
                 <prop key="hibernate.generate_statistics">
                     true

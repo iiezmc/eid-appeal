@@ -13,4 +13,9 @@
     <bean id="lwbSortAction" class="org.iie.action.LwbSortAction" scope="prototype">
         <property name="lwbSortService" ref="lwbSortService" />
     </bean>
+    
+    <!--长微博分类-->
+    <bean id="imgAction" class="org.iie.action.ImgAction" scope="prototype">
+        <property name="imgService" ref="imgService" />
+    </bean>
 </beans>

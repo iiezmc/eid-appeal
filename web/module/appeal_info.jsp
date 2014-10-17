@@ -122,7 +122,7 @@
                                                     <!--<div class="col-md-1  eid" style="width: 1px;padding: 0px;"> </div>-->
                                                     <!-- rigth -->
                                                     <div class="pull-right col-md-7 "> 
-                                                                                                                
+
                                                         <div class="above-zone eid">
 
                                                             <div class="col-md-5">
@@ -140,7 +140,7 @@
                                                             <div class="col-md-7 pull-right">
                                                             </div>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
 
@@ -175,7 +175,7 @@
         <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/appeal.center.js"></script>
         <script>
-            $(function () {
+            $(function() {
 
             });
         </script>

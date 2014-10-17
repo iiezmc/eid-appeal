@@ -25,5 +25,9 @@
     <bean id="lwbSortService" class="org.iie.service.impl.LwbSortServiceImpl" scope="singleton">
         <property name="baseDao" ref="baseDao" />
     </bean>
+    
+    <bean id="imgService" class="org.iie.service.impl.ImgServiceImpl" scope="singleton">
+        <property name="baseDao" ref="baseDao" />
+    </bean>
 
 </beans>
