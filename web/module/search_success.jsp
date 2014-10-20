@@ -52,7 +52,7 @@
                         
                         
                         <div id="process_bar" style="margin-left: 110px;">
-                            <img id="search_fail" class="img " src="images/appeal_fail.png">
+                            <img id="search_fail" class="img " src="images/appeal_success.png">
                         </div>
                         
                     <div id="page_content" class="col-sm-offset-2 col-sm-6" style="min-heigh: 400px; margin-top: 20px;">
