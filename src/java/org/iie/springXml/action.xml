@@ -18,4 +18,8 @@
     <bean id="imgAction" class="org.iie.action.ImgAction" scope="prototype">
         <property name="imgService" ref="imgService" />
     </bean>
+    
+    <bean id="adminAppealAction" class="org.iie.action.AdminAppealAction" scope="prototype">
+        <property name="adminAppealService" ref="adminAppealService" />
+    </bean>
 </beans>

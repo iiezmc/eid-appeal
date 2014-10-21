@@ -21,6 +21,10 @@
         <property name="baseDao" ref="baseDao" />
     </bean>
     
+    <bean id="adminAppealService" class="org.iie.service.impl.AdminAppealServiceImpl" scope="singleton">
+        <property name="baseDao" ref="baseDao" />
+    </bean>
+    
     
     <bean id="lwbSortService" class="org.iie.service.impl.LwbSortServiceImpl" scope="singleton">
         <property name="baseDao" ref="baseDao" />

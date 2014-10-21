@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="adminAppeal" extends="json-default">
+        
+        <action name="admin_appeal_list" class="adminAppealAction" method="list">
+            <result type="json">
+                <param name="root"> map</param>
+            </result>
+        </action>
+        
+        <action name="list_query" class="adminAppealAction" method="list_query">
+            <result type="json">
+                <param name="root"> map</param>
+            </result>
+        </action>
+
+    </package>
+</struts>

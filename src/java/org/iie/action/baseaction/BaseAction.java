@@ -17,6 +17,8 @@ public class BaseAction extends ActionSupport {
     public final String TXT_PATH = "E:/LwbData/txt/";
     public final String IMG_PATH = "";
 
+    public final String SESSION_ADMIN_QUERY = "session_admin_query";
+
     public void setRequest(String srcReq, Object dstReq) throws Exception {
         HttpServletRequest request = ServletActionContext.getRequest();
         request.setAttribute(srcReq, dstReq);
