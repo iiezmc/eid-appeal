@@ -23,6 +23,16 @@
             </result>
         </action>
         
+        <action name="img_uploads" class="imgAction" method="uploads">
+             <interceptor-ref name ="defaultStack" /> 
+            <interceptor-ref name ="fileUpload"> 
+                <param name ="allowedTypes"> image/jpg</param> 
+                <param name="maximumSize">5120</param>
+            </interceptor-ref>
+             <result name="input" >/module/appeal_info.jsp</result>
+             <result name="success" >/module/appeal_finish.jsp</result>
+        </action>
+        
         <action name="img_show" class="imgAction" method="show">
             <result name="success" >/module/img_show.jsp</result>
         </action>

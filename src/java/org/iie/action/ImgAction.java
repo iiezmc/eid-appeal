@@ -28,6 +28,12 @@ public class ImgAction extends BaseAction {
     private ServletOutputStream sout;//二进制流可以直接在jsp页面显示  
     private String message;
 
+    // 可以定义成数组类型，也可以定义成list  
+    private File[] uploadFiles; // 得到上传的文件,此属性对应于表单中文件字段的名称  
+    // 下面的这两个属性的命名必须遵守上定的规则，即为"表单中文件字段的名称" + "相应的后缀"  
+    private String[] uploadFilesContentType; // 得到上传的文件的数据类型,  
+    private String[] uploadFilesFileName; // 得到上传的文件的名称  
+
     public String upload() {
         if (uploadFile != null) {
             try {
@@ -47,6 +53,23 @@ public class ImgAction extends BaseAction {
             }
         } else {
             message = "上传文件为空！";
+        }
+        return SUCCESS;
+    }
+
+    public String uploads() throws IOException, Exception {
+        if (uploadFiles != null) {
+            for (int i = 0; i < uploadFiles.length; i++) {
+                TAppeal appeal = new TAppeal();
+                byte[] imgArray = FileUtils.readFileToByteArray(uploadFiles[i]);
+                appeal.setIdcardPhoto(imgArray);
+                appeal.setRequestTime(new Date());
+                String pk = imgService.saveToPK(appeal);
+                super.getSession().setAttribute(SESSION_APPEAL_PK, pk);
+            }
+        } else {
+//            message = "上传文件为空！";
+            return INPUT;
         }
         return SUCCESS;
     }
@@ -110,6 +133,30 @@ public class ImgAction extends BaseAction {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public File[] getUploadFiles() {
+        return uploadFiles;
+    }
+
+    public void setUploadFiles(File[] uploadFiles) {
+        this.uploadFiles = uploadFiles;
+    }
+
+    public String[] getUploadFilesContentType() {
+        return uploadFilesContentType;
+    }
+
+    public void setUploadFilesContentType(String[] uploadFilesContentType) {
+        this.uploadFilesContentType = uploadFilesContentType;
+    }
+
+    public String[] getUploadFilesFileName() {
+        return uploadFilesFileName;
+    }
+
+    public void setUploadFilesFileName(String[] uploadFilesFileName) {
+        this.uploadFilesFileName = uploadFilesFileName;
     }
 
 }
