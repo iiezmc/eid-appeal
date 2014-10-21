@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package org.iie.service.impl;
 
 import java.util.List;
@@ -16,9 +15,9 @@ import org.iie.service.ImgService;
  *
  * @author mc
  */
-public class ImgServiceImpl implements ImgService{
-    
-     private BaseDao baseDao;
+public class ImgServiceImpl implements ImgService {
+
+    private BaseDao baseDao;
 
     public BaseDao getBaseDao() {
         return baseDao;
@@ -33,5 +32,15 @@ public class ImgServiceImpl implements ImgService{
         baseDao.save(tAppeal);
     }
 
-    
+    @Override
+    public String saveToPK(TAppeal tAppeal) {
+        TAppeal appeal = (TAppeal) baseDao.saveToPK(tAppeal);
+        return appeal.getAppealId().toString();
+    }
+
+    @Override
+    public TAppeal findByID(String id) {
+        return (TAppeal) baseDao.find("from TAppeal where appealId =" + id).get(0);
+    }
+
 }

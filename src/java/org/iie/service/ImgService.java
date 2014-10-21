@@ -15,4 +15,8 @@ import org.iie.po.TAppeal;
 public interface ImgService {
 
     public void save(TAppeal tAppeal);
+    
+    public String saveToPK(TAppeal tAppeal);
+    
+    public TAppeal findByID(String id);
 }

@@ -64,7 +64,7 @@
     </jsp-config>
     
     <!--错误处理-->
-    <error-page>
+<!--    <error-page>
         <error-code>404</error-code>
         <location>/module/error.html</location>
     </error-page>
@@ -73,7 +73,7 @@
         </exception-type>
         <location>/module/error.html
         </location>
-    </error-page>
+    </error-page>-->
     
    
 </web-app>

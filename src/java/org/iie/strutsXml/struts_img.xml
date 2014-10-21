@@ -3,20 +3,28 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-    <package name="imgFile" extends="struts-default">
-        <action name="img_upload" class="imgAction" method="upload">
+    <package name="imgFile" extends="json-default">
+<!--        <action name="img_upload" class="imgAction" method="upload">
             
-            <interceptor-ref name ="defaultStack" /> 
+            <result name="success">/module/img_upload.jsp</result>
+        </action>-->
+        
+         <action name="img_upload" class="imgAction" method="upload">
+             <interceptor-ref name ="defaultStack" /> 
             <interceptor-ref name ="fileUpload"> 
                 <param name ="allowedTypes"> 
-                    image/bmp,image/png,image/gif,image/jpg
+                    image/bmp,image/png,image/gif,image/jpg,image/jpeg
                 </param> 
                 <param name="maximumSize">40480</param>
             </interceptor-ref>
             
-            <result name="success" type = "redirect">
-                http://www.baidu.com
+            <result type="json">
+                <param name="root">message</param>  
             </result>
+        </action>
+        
+        <action name="img_show" class="imgAction" method="show">
+            <result name="success" >/module/img_show.jsp</result>
         </action>
     </package>
     
@@ -44,4 +52,5 @@
             </result>
         </action>
     </package>-->
+    
 </struts>

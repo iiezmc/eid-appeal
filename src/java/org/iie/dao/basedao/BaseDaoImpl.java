@@ -99,4 +99,9 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
         session.close();
         return pager;
     }
+
+    @Override
+    public Object saveToPK(Object object) {
+       return getHibernateTemplate().merge(object);
+    }
 }

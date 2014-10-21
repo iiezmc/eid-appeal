@@ -16,9 +16,13 @@
     <head>
         <base href="<%=basePath%>">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>账号申述 - 证明资料</title>
         <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/base.css">
         <link rel="stylesheet" href="./css/help.center.css">
+        <script src="plugin/jquery-1.10.2.min.js"></script>
+        <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/appeal.center.js"></script>
         <style>
             .body-north.eid {margin: 10px 50px;margin-top:20px;}
             .step-stat.eid {width:440px; margin: 0 auto; margin-bottom: 20px;}
@@ -28,13 +32,11 @@
             .bottom-zone.eid{margin-top: 10px;}
             /*.v-divider.eid{height: 500px; width: 1px; margin: 20px 0px;}*/
         </style>
-        <title>账号申述 - 证明资料</title>
     </head>
     <body>
         <!-- header -->
         <header class="container">
             <div class="header">
-                <!--<h3 class="text-muted">Project name <span>|</span> 申述中心</h3>-->
                 <img src="images/logo.jpg"/>
             </div>
         </header>
@@ -50,7 +52,7 @@
                     <li><a href="module/search_login.jsp" class="nav-title eid">申述查询</a></li>
                 </ul>
             </div>
-        </div> <!--</nav>-->
+        </div>
         <!-- navbar -->
 
         <!-- main body -->
@@ -87,11 +89,12 @@
                                             <li><a href="#no_id" role="tab" data-toggle="tab">无身份证</a></li>
                                         </ul>
 
+
+
                                         <!-- Tab panes -->
                                         <div class="tab-content">
                                             <!--id-card-->
                                             <div class="tab-pane active" id="have_id">
-
                                                 <div class="row" style="margin-bottom: 20px;">
                                                     <!-- left -->
                                                     <div class="col-md-5 v-divider eid">
@@ -101,8 +104,11 @@
                                                                 <label for="inputName" class="control-label">身份证照片</label>
                                                             </div>
                                                             <div class="col-md-7 pull-right">
-                                                                <img class="img-thumbnail" alt=" " style="width: 100%; " src="images/id_background.png">
-                                                                <input id="" name="" class="form-control" type="file" accept="image/*" />
+                                                                <!--<img class="img-thumbnail" alt=" " style="width: 100%; " src="images/id_background.png">-->
+                                                                <div id="localImag">
+                                                                    <img id="img_prev" src="" alt="身份证照片" />
+                                                                </div>
+                                                                <input id="upload" name="uploadFile"  type='file' onchange="readURL(this);" />
                                                             </div>
                                                         </div>
 
@@ -151,7 +157,7 @@
                                                                 </ol>
                                                             </div>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
 
@@ -160,8 +166,6 @@
 
 
                                             <div class="tab-pane" id="no_id">
-                                                
-                                                
                                                 <div class="row" style="margin-bottom: 20px;">
                                                     <!-- left -->
                                                     <div class="col-md-5 v-divider eid">
@@ -193,7 +197,7 @@
                                                     <!--<div class="col-md-1  eid" style="width: 1px;padding: 0px;"> </div>-->
                                                     <!-- rigth -->
                                                     <div class="pull-right col-md-7 "> 
-                                                                                                                
+
                                                         <div class="above-zone eid">
 
                                                             <div class="col-sm-4">
@@ -224,49 +228,23 @@
 
                                                     </div>
                                                 </div>
-
-                                                <!-- submit btn -->
-<!--                                                <div class="row">
-                                                    <div class="col-md-offset-2 col-md-6">
-                                                        <button id="btn_submit_step01" type="submit" class="btn btn-block btn-primary" >提   交</button>
-                                                    </div>
-                                                </div>-->
-                                                
-                                                
-                                                
-                                                
-                                                
                                             </div>
                                         </div>
                                     </div>  <!-- /.photo-zone -->
-                                    
+
                                     <!-- submit btn -->
-                                                <div class="row">
-                                                    <div class="col-md-offset-2 col-md-6">
-                                                        <button id="btn_submit_step02" type="submit" class="btn btn-block btn-primary" >提   交</button>
-                                                    </div>
-                                                </div>
-                                </div> <!-- /.form-zone -->
+                                    <div class="row">
+                                        <div class="col-md-offset-2 col-md-6">
+                                            <button id="btn_submit_step02" type="submit" class="btn btn-block btn-primary" >提   交</button>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                             <!-- /main body -->
-
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div> <!-- /.row -->
         </div> <!-- /.container -->
-
-        <script src="plugin/jquery-1.10.2.min.js"></script>
-        <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/appeal.center.js"></script>
-        <script>
-            $(function() {
-
-            });
-        </script>
     </body> 
 </html>

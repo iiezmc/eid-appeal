@@ -88,4 +88,11 @@ public interface BaseDao {
      * @param hql
      */
     public void update(String hql);
+
+    /**
+     * 保存对象并返回主键
+     * @param object
+     * @return 
+     */
+    public Object saveToPK(Object object);
 }
